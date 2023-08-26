@@ -1,4 +1,4 @@
-from utils import *
+from .utils import *
 
 def handle_execute(script_path: str, extra_args: list[str]) -> None:
     execute_script(script_path, extra_args)
@@ -36,7 +36,7 @@ def handle_find(query: str, target_folder: str) -> None:
 def handle_help() -> None:
     
     print("""
-Usage: python3 psh.py [command] [args]
+Usage: psh [command] [args]
 
 Commands:
 

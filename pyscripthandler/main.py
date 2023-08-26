@@ -1,7 +1,7 @@
 import sys
 import os
 
-from commands import *
+from .commands import *
 
 def main() -> None:
     script_folder = 'scripts/'
