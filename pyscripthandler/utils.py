@@ -17,4 +17,5 @@ def list_scripts(target_folder: str) -> list[str]:
     return [s for s in os.listdir(target_folder) if s.endswith('.py')]
 
 def find_script(query: str, target_folder: str) -> list[str]:
-    return [s for s in os.listdir(target_folder) if query.lower() in s.lower()]
+    scripts = [s for s in os.listdir(target_folder) if query.lower() in s.lower()]
+    return sorted(scripts, key=lambda s: (not s.lower().startswith(query.lower()), len(s)))

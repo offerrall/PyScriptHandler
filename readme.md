@@ -1,51 +1,51 @@
-## Descripción
+## Description
 
-PyScriptHandler es una herramienta CLI ultra-ligera diseñada para hacer que la gestión de scripts de Python sea tan simple y directa como sea posible.
+PyScriptHandler is an ultra-lightweight CLI tool designed to make managing Python scripts as simple and straightforward as possible.
 
-La idea es que puedas tener una lista de scripts que funcionen en Windows, macOS, Linux y que puedas ejecutarlos desde cualquier lugar del sistema.
+The idea is that you can have a list of scripts that work on Windows, macOS, and Linux, and you can run them from anywhere on your system.
 
-### Características clave:
+### Key Features:
 
-- **Simplicidad**: Con menos de 150 líneas de código, PyScriptHandler es extremadamente fácil de entender y modificar según tus necesidades.
-- **Portabilidad**: La idea es unificar la forma en que se ejecutan los scripts de Python en cualquier sistema operativo.
-- **Cero Configuración**: No hay archivos de configuración para editar, no hay dependencias para instalar. Simplemente instala el script y empieza a usarlo.
-- **Comandos Simples**: Los comandos son simples y fáciles de recordar. No hay necesidad de buscar en la documentación cada vez que quieras ejecutar un script.
-- **Alias Friendly**: Puedes crear alias para los comandos y ejecutar tus scripts con un solo comando.
+- **Simplicity**: With fewer than 150 lines of code, PyScriptHandler is extremely easy to understand and modify to suit your needs.
+- **Portability**: The aim is to unify the way Python scripts are run across any operating system.
+- **Zero Configuration**: There are no configuration files to edit, no dependencies to install. Simply install the script and start using it.
+- **Simple Commands**: The commands are simple and easy to remember. No need to look up documentation every time you want to run a script.
+- **Alias Friendly**: You can create aliases for commands and run your scripts with a single command.
 
-### ¿Por qué usar PyScriptHandler?
-Este proyecto nació de mi propia necesidad de tener una herramienta simple donde poder almacenar y ejecutar mis scripts de Python, la cual fuera lo mas minimalista posible y que no requiriera de ninguna configuración adicional. Si te encuentras en una situación similar, entonces PyScriptHandler es para ti.
+### Why Use PyScriptHandler?
+This project was born out of my own need for a simple tool where I could store and run my Python scripts, which was as minimalist as possible and required no additional configuration. If you find yourself in a similar situation, then PyScriptHandler is for you.
 
-### Instalación
+### Installation
 
-PyScriptHandler se puede instalar fácilmente clonando el repositorio y ejecutando el script de instalación:
+PyScriptHandler can be easily installed by cloning the repository and running the installation script.
+
 
 ```bash
 git clone
 cd pyscripthandler
 python install.py
 ```
-nota: Si estás en Linux o macOS, es posible que tengas que usar `python3` en lugar de `python`.
 
 ### Comandos
 
-- `psh -h`: Muestra los comandos disponibles.
-- `psh <script_name>`: Ejecuta un script.
-- `psh list`: Lista todos los scripts disponibles.
-- `psh add <script_path>`: Añade un nuevo script a la lista, el nombre del script será el nombre del archivo.
-- `psh remove <script_name>`: Elimina un script de la lista.
-- `psh find <script_name>`: Busca un script en la lista o varios scripts que contengan el nombre especificado.
-- `psh pwd`: Muestra la ruta actual del directorio de scripts.
+- `psh -h`: Shows the help message.
+- `psh <script_name>`: Runs the specified script.
+- `psh list`: Lists all the scripts in the list.
+- `psh add <script_path>`: Adds a new script to the list.
+- `psh remove <script_name>`: Removes a script from the list.
+- `psh find <script_name>`: Searches for a script in the list.
+- `psh pwd`: Shows the current script directory path.
 
-### Ejemplos
+### Examples
 
 ```bash
-# Ejecuta un script
+# Runs a script
 psh hello_world
 
-# Lista todos los scripts
+# Muestra la lista de scripts
 psh list
 
-# Añade un nuevo script
+# Agrega un script
 psh add /path/to/script.py
 
 # Elimina un script
@@ -54,7 +54,7 @@ psh remove hello_world
 # Busca un script
 psh find hello_world
 
-# Muestra la ruta actual del directorio de scripts
+# Muestra el directorio actual
 psh pwd
 ```
 
