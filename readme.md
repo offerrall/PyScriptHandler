@@ -24,6 +24,7 @@ PyScriptHandler can be easily installed by cloning the repository and running th
 git clone https://github.com/offerrall/PyScriptHandler.git
 cd PyScriptHandler
 pip install .
+
 ```
 
 ### Comandos
@@ -42,19 +43,19 @@ pip install .
 # Runs a script
 psh hello_world
 
-# Muestra la lista de scripts
+# Shows the list of scripts
 psh list
 
-# Agrega un script
+# Adds a new script
 psh add /path/to/script.py
 
-# Elimina un script
+# Removes a script
 psh remove hello_world
 
-# Busca un script
+# Finds a script
 psh find hello_world
 
-# Muestra el directorio actual
+# Shows the current script directory path
 psh pwd
 ```
 

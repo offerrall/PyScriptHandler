@@ -21,7 +21,7 @@ def main() -> None:
     if os.path.exists(teorical_path):
         handle_execute(teorical_path, script_folder, sys.argv[2:])
     
-    elif command == '-h':
+    elif command == '-h' or command == '--help':
         handle_help()
     
     elif command == 'add':

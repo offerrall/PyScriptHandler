@@ -48,11 +48,18 @@ Usage: psh [command] [args]
 
 Commands:
 
--h: Show this help message.
-["script_name"] [args]: Execute the script with the given name and arguments.
-add <script_path>: Add a script to the script folder.
-remove <script_name>: Remove a script from the script folder.
-list: List all scripts in the script folder.
-find <query>: Find all scripts containing the query.
-pwd: Print the directory of the script folder.
+Show this help message.
+    -h, --help:
+Execute the script with the given name and arguments.
+    ["script_name"] [args]:
+Add a script to the script folder.
+    add <script_path>
+Remove a script from the script folder.
+    remove <script_name>
+List all scripts in the script folder
+    list
+Find all scripts containing the query.
+    find <query>
+Print the directory of the script folder.
+    pwd
 """)   
