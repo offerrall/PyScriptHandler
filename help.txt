@@ -1,0 +1,20 @@
+- Add your scripts to the add command
+Example: PyScriptHub add myscript.py
+
+- Run your script with the name of the script as the first argument
+Example: PyScriptHub myscript
+
+- Remove your script with the remove command
+Example: PyScriptHub remove myscript
+
+- List all your scripts with the list command
+Example: PyScriptHub list
+
+- Find a script with the find command
+Example: PyScriptHub find myscript
+
+- Export your scripts to a zip file with the export command
+Example: PyScriptHub export myscripts.zip
+
+- Import your scripts from a zip file with the import command
+Example: PyScriptHub import myscripts.zip
