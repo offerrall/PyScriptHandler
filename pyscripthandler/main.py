@@ -17,9 +17,9 @@ def main() -> None:
 
     command = sys.argv[1]
     
-    teorical_path = os.path.join(script_folder, command)
+    teorical_path = os.path.join(script_folder, command + ".py")
     if os.path.exists(teorical_path):
-        handle_execute(teorical_path, script_folder, sys.argv[2:])
+        handle_execute(teorical_path, sys.argv[2:])
     
     elif command == '-h' or command == '--help':
         handle_help()
