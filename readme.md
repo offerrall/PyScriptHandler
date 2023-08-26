@@ -6,7 +6,7 @@ The idea is that you can have a list of scripts that work on Windows, macOS, and
 
 ### Key Features:
 
-- **Simplicity**: With fewer than 150 lines of code, PyScriptHandler is extremely easy to understand and modify to suit your needs.
+- **Simplicity**: With fewer than 200 lines of code, PyScriptHandler is extremely easy to understand and modify to suit your needs.
 - **Portability**: The aim is to unify the way Python scripts are run across any operating system.
 - **Zero Configuration**: There are no configuration files to edit, no dependencies to install. Simply install the script and start using it.
 - **Simple Commands**: The commands are simple and easy to remember. No need to look up documentation every time you want to run a script.

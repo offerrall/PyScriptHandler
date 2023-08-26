@@ -5,6 +5,8 @@ from .commands import *
 
 def main() -> None:
     script_folder = 'scripts/'
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    script_folder = os.path.join(current_dir, script_folder)
 
     if not os.path.exists(script_folder):
         os.mkdir(script_folder)
