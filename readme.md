@@ -21,9 +21,9 @@ PyScriptHandler can be easily installed by cloning the repository and running th
 
 
 ```bash
-git clone
-cd pyscripthandler
-python install.py
+git clone https://github.com/offerrall/PyScriptHandler.git
+cd PyScriptHandler
+pip install .
 ```
 
 ### Comandos
