@@ -1,10 +1,11 @@
 import os
-import zipfile
 import shutil
 import subprocess
+import platform
 
 def execute_script(script_path: str, extra_args: list[str]) -> None:
-    subprocess.run(['python', script_path] + extra_args)
+    python_path = 'python' if platform.system() == 'Windows' else 'python3'
+    subprocess.run([python_path, script_path] + extra_args)
 
 def add_script(script_path: str, target_folder: str) -> None:
     shutil.copy(script_path, target_folder)
@@ -17,13 +18,3 @@ def list_scripts(target_folder: str) -> list[str]:
 
 def find_script(query: str, target_folder: str) -> list[str]:
     return [s for s in os.listdir(target_folder) if query.lower() in s.lower()]
-
-def export_scripts(target_folder: str, zip_name: str) -> None:
-    with zipfile.ZipFile(zip_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        for root, _, files in os.walk(target_folder):
-            for file in files:
-                zipf.write(os.path.join(root, file))
-
-def import_scripts(zip_name: str, target_folder: str) -> None:
-    with zipfile.ZipFile(zip_name, 'r') as zipf:
-        zipf.extractall(target_folder)
